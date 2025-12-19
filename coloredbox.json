@@ -4,7 +4,7 @@
     "name": "Colored Box",
     "description": "A colored box",
     "newInstancePrefix": "ColoredBox",
-    "icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
+    "icon": "https://raw.githubusercontent.com/GabrielGH-dot/custom-widget-table/refs/heads/main/icon.png",
     "vendor": "SAP",
     "eula": "",
     "license": "",
@@ -76,3 +76,4 @@
     }
 
 }
+
