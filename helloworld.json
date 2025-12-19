@@ -13,13 +13,6 @@
       "url": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.js",
       "integrity": "sha256-Xr6U8rkIh0YkCYlqaI2OEayeGTG9hzXuDNIZdqljgto=",
       "ignoreIntegrity": false
-    },
-    {
-      "kind": "builder",
-      "tag": "ggh-helloworld-builder",
-      "url": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld-builder.js",
-      "integrity": "sha256-Xr6U8rkIh0YkCYlqaI2OEayeGTG9hzXuDNIZdqljgto=",
-      "ignoreIntegrity": false
     }
   ],
   "properties": {
