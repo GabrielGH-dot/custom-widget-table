@@ -10,7 +10,7 @@
     {
       "kind": "main",
       "tag": "ggh-helloworld",
-      "url": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.js",
+      "url": "https://raw.githubusercontent.com/GabrielGH-dot/custom-widget-table/refs/heads/main/helloworld.js",
       "integrity": "sha256-Xr6U8rkIh0YkCYlqaI2OEayeGTG9hzXuDNIZdqljgto=",
       "ignoreIntegrity": false
     }
