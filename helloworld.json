@@ -2,8 +2,8 @@
   "id": "custom.widget.helloworld", 
   "name": "Hello World Widget",
   "description": "Un widget básico que muestra Hello World",
-  "script": "https://example.com/helloworld.js",
-  "style": "https://example.com/helloworld.css",
+  "script": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.js",
+  "style": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.css",
   "defaultWidth": 300,
   "defaultHeight": 150,
   "properties": {
