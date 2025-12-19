@@ -1,0 +1,16 @@
+{
+  "id": "custom.widget.helloworld", 
+  "name": "Hello World Widget",
+  "description": "Un widget básico que muestra Hello World",
+  "script": "https://example.com/helloworld.js",
+  "style": "https://example.com/helloworld.css",
+  "defaultWidth": 300,
+  "defaultHeight": 150,
+  "properties": {
+    "text": {
+      "type": "string",
+      "default": "Hello, SAC World!",
+      "binding": "optional"
+    }
+  }
+}
