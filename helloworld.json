@@ -1,16 +1,34 @@
 {
-  "id": "custom.widget.helloworld", 
+  "id": "custom.widget.helloworld",
   "name": "Hello World Widget",
+  "version": "1.0.0",
   "description": "Un widget básico que muestra Hello World",
-  "script": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.js",
-  "style": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.css",
-  "defaultWidth": 300,
-  "defaultHeight": 150,
+  "newInstancePrefix": "gghHelloWorld",
+  "vendor": "GabrielGH-dot.github.io",
+  "license": "MIT",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "ggh-helloworld",
+      "url": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld.js",
+      "integrity": "sha256-Xr6U8rkIh0YkCYlqaI2OEayeGTG9hzXuDNIZdqljgto=",
+      "ignoreIntegrity": false
+    },
+    {
+      "kind": "builder",
+      "tag": "ggh-helloworld-builder",
+      "url": "https://github.com/GabrielGH-dot/custom-widget-table/blob/main/helloworld-builder.js",
+      "integrity": "sha256-Xr6U8rkIh0YkCYlqaI2OEayeGTG9hzXuDNIZdqljgto=",
+      "ignoreIntegrity": false
+    }
+  ],
   "properties": {
     "text": {
       "type": "string",
       "default": "Hello, SAC World!",
-      "binding": "optional"
+      "description": "Hello, SAC World!"
     }
-  }
+  },
+  "methods": {},
+  "events": {}
 }
