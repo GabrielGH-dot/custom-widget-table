@@ -13,22 +13,22 @@
             "kind": "main",
             "tag": "com-sap-sample-coloredbox",
             "url": "https://raw.githubusercontent.com/GabrielGH-dot/custom-widget-table/main/coloredbox.js",
-            "integrity": "sha256-2047B2E9B5744CD148ACC93FD3E04EBB1E6575F54F6FC552724E8279A60CDE35",
-            "ignoreIntegrity": false
+            "integrity": "",
+            "ignoreIntegrity": true
         },
         {
             "kind": "styling",
             "tag": "com-sap-sample-coloredbox-styling",
             "url": "https://raw.githubusercontent.com/GabrielGH-dot/custom-widget-table/main/coloredbox_styling.js",
-            "integrity": "sha256-4A72F84F5D5424FFDB6CDADF48760C4F16BBB0AD9CE54E8AE9A9BDA0C6F6B072",
-            "ignoreIntegrity": false
+            "integrity": "",
+            "ignoreIntegrity": true
         },
         {
             "kind": "builder",
             "tag": "com-sap-sample-coloredbox-builder",
             "url": "https://raw.githubusercontent.com/GabrielGH-dot/custom-widget-table/main/coloredbox_builder.js",
-            "integrity": "sha256-CCFF95856C394A9BC9603DD02FA6F422ECCEBC05E87A2C75794038F313A191C3",
-            "ignoreIntegrity": false
+            "integrity": "",
+            "ignoreIntegrity": true
         }
     ],
     "properties": {
