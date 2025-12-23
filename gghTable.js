@@ -40,7 +40,7 @@
         </table> 
 	`;
 
-    class GghTable extends HTMLElement {
+    class GghTabla extends HTMLElement {
         constructor() {
             super();
             let shadowRoot = this.attachShadow({ mode: "open" });
@@ -110,5 +110,5 @@
 
     }
 
-    customElements.define("com.ggh.Table", GghTable);
+    customElements.define("com-sample-tabla", GghTabla);
 })();
