@@ -48,7 +48,7 @@
             super();
             let shadowRoot = this.attachShadow({ mode: "open" });
             shadowRoot.appendChild(template.content.cloneNode(true));
-            this._props = {};
+            // this._props = {};
         }
 
         onCustomWidgetBeforeUpdate(changedProperties) {
@@ -58,16 +58,13 @@
         onCustomWidgetAfterUpdate(changedProperties) {
 
             if (changedProperties.header && changedProperties.alignmentHeader) {
-                this._setHeader({
-                    header: this._props.header, alignments: this._props.alignmentHeader
-                });
+                this._setHeader(changedProperties.header, changedProperties.alignmentHeader);
             }
 
             if (changedProperties.data && changedProperties.alignmentData) {
-                this._setData({
-                    data: this._props.data, alignments: this._props.alignmentData
-                });
+                this._setData(changedProperties.data, changedProperties.alignmentData);
             }
+
         }
 
         /**
@@ -75,7 +72,7 @@
          * @param {string[]} header - Una lista de encabezados
          * @param {string[]} alignments - Arreglo con las alineaciones para cada columna
          */
-        _setHeader({ header, alignments }) {
+        _setHeader(header, alignments) {
 
             const headerCells = header.map((headerText, index) => {
                 const th = document.createElement('th');
@@ -98,7 +95,7 @@
          * @param {string[][]} data - Matriz con los datos para llenar la tabla
          * @param {string[]} alignments - Arreglo con las alineaciones para cada columna
          */
-        _setData({ data, alignments }) {
+        _setData(data, alignments) {
 
             const rows = data.map(rowData => {
                 const row = document.createElement('tr');
