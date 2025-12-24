@@ -52,13 +52,20 @@
         }
 
         onCustomWidgetBeforeUpdate(changedProperties) {
-            this._props = { ...this._props, ...changedProperties };
+            // this._props = { ...this._props, ...changedProperties };
         }
 
         onCustomWidgetAfterUpdate(changedProperties) {
+
             if (changedProperties.header && changedProperties.alignmentHeader) {
                 this._setHeader({
                     header: this._props.header, alignments: this._props.alignmentHeader
+                });
+            }
+
+            if (changedProperties.data && changedProperties.alignmentData) {
+                this._setData({
+                    data: this._props.data, alignments: this._props.alignmentData
                 });
             }
         }
@@ -91,7 +98,7 @@
          * @param {string[][]} data - Matriz con los datos para llenar la tabla
          * @param {string[]} alignments - Arreglo con las alineaciones para cada columna
          */
-        set setData({ data, alignments }) {
+        _setData({ data, alignments }) {
 
             const rows = data.map(rowData => {
                 const row = document.createElement('tr');
@@ -114,7 +121,6 @@
             tbody.append(...rows);
 
         }
-
     }
 
     customElements.define("com-sample-tabla", GghTabla);
