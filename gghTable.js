@@ -2,37 +2,40 @@
     let template = document.createElement("template");
     template.innerHTML = `
 		<style>
-            table {
-                border-collapse: collapse;
-                font-family: Inter, sans-serif;
-                font-size: 0.8em;
-                width: 100%;
-            }
+        :host {
+			display: block;
+		} 
+        table {
+            border-collapse: collapse;
+            font-family: Inter, sans-serif;
+            font-size: 0.8em;
+            width: 100%;
+        }
 
-            thead tr {
-                color: #ffffff;
-                text-align: left;
-                background-color: #535353;
-                position: sticky;
-                top: 0;
-            }
+        thead tr {
+            color: #ffffff;
+            text-align: left;
+            background-color: #535353;
+            position: sticky;
+            top: 0;
+        }
 
-            th,
-            td {
-                font-weight: normal;
-                padding: 6px 12px;
-                border: 1px solid #ccc;
-                padding: 8px;
-            }
+        th,
+        td {
+            font-weight: normal;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
 
-            tbody tr:nth-child(even) {
-                background-color: #f3f3f3;
-            }
+        tbody tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
 
-            tbody {
-                max-height: 300px;
-                overflow-y: auto;
-            }
+        tbody {
+            max-height: 300px;
+            overflow-y: auto;
+        }
 		</style>
         <table>
             <thead></thead>
