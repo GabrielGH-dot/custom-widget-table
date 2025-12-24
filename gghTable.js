@@ -56,11 +56,10 @@
         }
 
         onCustomWidgetAfterUpdate(changedProperties) {
-            if (changedProperties.header || changedProperties.alignmentHeader) {
-                this._setHeader = {
-                    header: this._props.header,
-                    alignments: this._props.alignmentHeader
-                };
+            if (changedProperties.header && changedProperties.alignmentHeader) {
+                this._setHeader({
+                    header: this._props.header, alignments: this._props.alignmentHeader
+                });
             }
         }
 
@@ -69,7 +68,6 @@
          * @param {string[]} header - Una lista de encabezados
          * @param {string[]} alignments - Arreglo con las alineaciones para cada columna
          */
-
         _setHeader({ header, alignments }) {
 
             const headerCells = header.map((headerText, index) => {
