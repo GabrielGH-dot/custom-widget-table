@@ -10,7 +10,7 @@
 }
 
 .table-container {
-    max-height: 300px;
+    max-height: 561px;
     /* Altura máxima para el área desplazable */
     overflow-y: auto;
     /* Activar desplazamiento vertical */
