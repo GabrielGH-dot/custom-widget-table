@@ -80,10 +80,12 @@ table thead tr:nth-child(2) th {
     color: #58595b;
 }
 		</style>
-        <table>
-            <thead></thead>
-            <tbody></tbody>
-        </table> 
+        <div class="table-container">
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
 	`;
 
     class GghTabla extends HTMLElement {
